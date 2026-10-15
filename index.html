@@ -1,182 +1,702 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lilian Kariuki — Front Office and Receptionist professional based in Nairobi, Kenya.">
+
+  <meta
+    name="description"
+    content="Lilian Kariuki — Front Office, Reception and Customer Experience professional based in Nairobi, Kenya."
+  >
+  <meta name="theme-color" content="#ffffff">
+
   <title>Lilian Kariuki | Front Office & Guest Experience</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="Lilian Kariuki home">LK<span>.</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Main navigation">
+    <a class="wordmark" href="#home" aria-label="Lilian Kariuki home">
+      LK<span>.</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+    >
+      ☰
+    </button>
+
+    <nav
+      class="nav"
+      id="primary-navigation"
+      aria-label="Main navigation"
+    >
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
       <a href="#strengths">Strengths</a>
-      <a href="#education">Education</a>
-      <a class="nav-cta" href="#contact">Get in touch <span>↗</span></a>
+      <a href="#tools">Technical Skills</a>
+      <a class="nav-cta" href="#contact">
+        Get in touch <span>↗</span>
+      </a>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero section-wrap" id="home">
+
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> NAIROBI, KENYA · CUSTOMER EXPERIENCE</p>
-        <h1>Thoughtful service.<br><em>Exceptional first</em><br><em>impressions.</em></h1>
-        <p class="hero-intro">I’m Lilian Kariuki, a warm, professional and service-oriented customer-experience specialist with a background in hospitality, client engagement and front-line support.</p>
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          NAIROBI, KENYA · CUSTOMER EXPERIENCE
+        </p>
+
+        <h1>
+          Thoughtful service.<br>
+          <em>Exceptional first</em><br>
+          <em>impressions.</em>
+        </h1>
+
+        <p class="hero-intro">
+          I’m Lilian Kariuki, a warm, professional and
+          service-oriented customer-experience specialist with
+          a background in hospitality, client engagement and
+          front-line support.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-dark" href="#experience">Explore my experience <span>↓</span></a>
-          <a class="text-link" href="#contact">Contact Lilian <span>↗</span></a>
+          <a class="button button-dark" href="#experience">
+            Explore my experience <span>↓</span>
+          </a>
+
+          <a class="text-link" href="#contact">
+            Contact Lilian <span>↗</span>
+          </a>
         </div>
+
         <div class="hero-meta">
-          <div><strong>5+</strong><span>Hospitality & service roles</span></div>
-          <div><strong>2021–25</strong><span>University studies</span></div>
-          <div><strong>People-first</strong><span>Always the approach</span></div>
+          <div>
+            <strong>5+</strong>
+            <span>Hospitality &amp; service roles</span>
+          </div>
+
+          <div>
+            <strong>2021–25</strong>
+            <span>University studies</span>
+          </div>
+
+          <div>
+            <strong>People-first</strong>
+            <span>Always the approach</span>
+          </div>
         </div>
       </div>
+
       <div class="hero-visual">
         <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=85" alt="Professional team collaborating in a welcoming workplace">
-          <div class="image-label"><span class="label-dot"></span><div><strong>Warmth meets professionalism</strong><small>Guest care · Front-office support</small></div></div>
+          <img
+            src="assets/Portrait.jpeg"
+            alt="Professionals collaborating in a welcoming workplace"
+            fetchpriority="high"
+          >
+
+          <div class="image-label">
+            <span class="label-dot"></span>
+
+            <div>
+              <strong>Warmth meets professionalism</strong>
+              <small>Guest care · Front-office support</small>
+            </div>
+          </div>
         </div>
-        <div class="floating-note"><span class="note-mark">“</span><p>Every interaction is an opportunity to make someone feel welcome.</p></div>
-        <div class="visual-caption">SERVICE WITH CARE, CLARITY & CONFIDENCE</div>
+
+        <div class="floating-note">
+          <span class="note-mark">“</span>
+          <p>
+            Every interaction is an opportunity to make someone
+            feel welcome.
+          </p>
+        </div>
+
+        <div class="visual-caption">
+          SERVICE WITH CARE, CLARITY &amp; CONFIDENCE
+        </div>
       </div>
+
     </section>
 
-    <section class="intro-band">
+    <!-- PROFILE -->
+    <section class="intro-band" id="about">
       <div class="section-wrap intro-grid">
+
         <p class="eyebrow">01 / PROFILE</p>
+
         <div>
-          <h2>Professional, approachable<br>and ready to make a difference.</h2>
-          <p>Experienced in welcoming and assisting clients, handling telephone, email and in-person enquiries, resolving concerns, maintaining accurate records and coordinating with teams to deliver timely service. Calm under pressure, discreet with customer information and committed to a polished, organised front-office environment.</p>
+          <h2>
+            Professional, approachable<br>
+            and ready to make a difference.
+          </h2>
+
+          <p>
+            Experienced in welcoming and assisting clients,
+            handling telephone, email and in-person enquiries,
+            resolving concerns, maintaining accurate records
+            and coordinating with teams to deliver timely service.
+            Calm under pressure, discreet with customer information
+            and committed to a polished, organised front-office
+            environment.
+          </p>
         </div>
+
       </div>
     </section>
 
+    <!-- EDUCATION: POSITIONED BEFORE EXPERIENCE -->
     <section class="education-feature" id="education">
       <div class="section-wrap education-feature-grid">
+
         <div class="education-feature-heading">
           <p class="eyebrow">02 / EDUCATION</p>
-          <h2>Empathy in learning.<br><em>Care in every interaction.</em></h2>
-          <p>Her academic background supports an empathetic, thoughtful approach to listening, communication and resolving concerns.</p>
+
+          <h2>
+            Empathy in learning.<br>
+            <em>Care in every interaction.</em>
+          </h2>
+
+          <p>
+            Her academic background supports an empathetic,
+            thoughtful approach to listening, communication
+            and resolving concerns.
+          </p>
         </div>
+
         <article class="degree-highlight">
-          <div class="degree-topline"><span class="degree-icon">✳</span><span class="degree-years">AUG 2021 — JUL 2025</span></div>
+
+          <div class="degree-topline">
+            <span class="degree-icon" aria-hidden="true">✳</span>
+            <span class="degree-years">AUG 2021 — JUL 2025</span>
+          </div>
+
           <p class="degree-label">BACHELOR'S DEGREE</p>
-          <h3>Bachelor of Arts in<br>Counselling Psychology</h3>
+
+          <h3>
+            Bachelor of Arts in<br>
+            Counselling Psychology
+          </h3>
+
           <div class="degree-divider"></div>
-          <p class="degree-university">Africa Nazarene University</p>
-          <p class="degree-location">Rongai, Kenya</p>
+
+          <p class="degree-university">
+            Africa Nazarene University
+          </p>
+
+          <p class="degree-location">
+            Rongai, Kenya
+          </p>
+
         </article>
+
       </div>
     </section>
 
+    <!-- PROFESSIONAL STRENGTHS -->
     <section class="section-wrap section-block" id="strengths">
+
       <div class="section-heading">
-        <div><p class="eyebrow">02 / WHAT I BRING</p><h2>Service built on<br><em>the right details.</em></h2></div>
-        <p class="heading-aside">A balanced mix of hospitality instincts, administrative care and clear communication.</p>
-      </div>
-      <div class="strength-grid">
-        <article class="strength-card"><span class="card-number">01</span><div class="strength-icon">✳</div><h3>Front-office presence</h3><p>Client and visitor reception, guest guidance, telephone etiquette and a welcoming first point of contact.</p></article>
-        <article class="strength-card"><span class="card-number">02</span><div class="strength-icon">↗</div><h3>Client care</h3><p>Active listening, complaint handling, thoughtful follow-up and professional relationship management.</p></article>
-        <article class="strength-card"><span class="card-number">03</span><div class="strength-icon">▤</div><h3>Office coordination</h3><p>Records, registers, filing, order processing, stationery monitoring and internal team coordination.</p></article>
-        <article class="strength-card"><span class="card-number">04</span><div class="strength-icon">◷</div><h3>Calm under pressure</h3><p>Prioritising competing requests and maintaining service quality during busy periods and events.</p></article>
-      </div>
-      <div class="skills-strip">
-        <p class="eyebrow">CORE COMPETENCIES</p>
-        <div class="skill-tags">
-          <span>Guest & visitor reception</span><span>Telephone & email etiquette</span><span>Meeting support</span><span>Supplier coordination</span><span>Event assistance</span><span>Records & filing</span><span>Confidentiality</span><span>Problem-solving</span><span>Microsoft Office</span><span>Order follow-up</span><span>Office presentation</span><span>Multitasking</span>
+
+        <div>
+          <p class="eyebrow">03 / WHAT I BRING</p>
+
+          <h2>
+            Service built on<br>
+            <em>the right details.</em>
+          </h2>
         </div>
+
+        <p class="heading-aside">
+          A balanced mix of hospitality instincts,
+          administrative care and clear communication.
+        </p>
+
+      </div>
+
+      <div class="strength-grid">
+
+        <article class="strength-card">
+          <span class="card-number">01</span>
+          <div class="strength-icon" aria-hidden="true">✳</div>
+
+          <h3>Front-office presence</h3>
+
+          <p>
+            Client and visitor reception, guest guidance,
+            telephone etiquette and a welcoming first point
+            of contact.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <span class="card-number">02</span>
+          <div class="strength-icon" aria-hidden="true">↗</div>
+
+          <h3>Client care</h3>
+
+          <p>
+            Active listening, complaint handling, thoughtful
+            follow-up and professional relationship management.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <span class="card-number">03</span>
+          <div class="strength-icon" aria-hidden="true">▤</div>
+
+          <h3>Office coordination</h3>
+
+          <p>
+            Records, registers, filing, order processing,
+            stationery monitoring and internal team coordination.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <span class="card-number">04</span>
+          <div class="strength-icon" aria-hidden="true">◷</div>
+
+          <h3>Calm under pressure</h3>
+
+          <p>
+            Prioritising competing requests and maintaining
+            service quality during busy periods and events.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="skills-strip">
+
+        <p class="eyebrow">CORE COMPETENCIES</p>
+
+        <div class="skill-tags">
+          <span>Guest &amp; visitor reception</span>
+          <span>Telephone &amp; email etiquette</span>
+          <span>Meeting support</span>
+          <span>Supplier coordination</span>
+          <span>Event assistance</span>
+          <span>Records &amp; filing</span>
+          <span>Confidentiality</span>
+          <span>Problem-solving</span>
+          <span>Microsoft Office</span>
+          <span>Order follow-up</span>
+          <span>Office presentation</span>
+          <span>Multitasking</span>
+        </div>
+
       </div>
     </section>
 
+    <!-- PROFESSIONAL EXPERIENCE -->
     <section class="experience-section" id="experience">
       <div class="section-wrap section-block">
+
         <div class="section-heading">
-          <div><p class="eyebrow">03 / CAREER JOURNEY</p><h2>Experience with<br><em>people at the centre.</em></h2></div>
-          <p class="heading-aside">Across customer service and hospitality, I focus on making every guest interaction smooth, respectful and memorable.</p>
+
+          <div>
+            <p class="eyebrow">04 / CAREER JOURNEY</p>
+
+            <h2>
+              Experience with<br>
+              <em>people at the centre.</em>
+            </h2>
+          </div>
+
+          <p class="heading-aside">
+            Across customer service and hospitality, I focus on
+            making every guest interaction smooth, respectful
+            and memorable.
+          </p>
+
         </div>
+
         <div class="timeline">
+
+          <!-- ROLE 1 -->
           <article class="timeline-item current">
-            <div class="timeline-date">JUN 2026 — PRESENT</div>
+
+            <div class="timeline-date">
+              JUN 2026 — PRESENT
+            </div>
+
             <div class="timeline-content">
-              <div class="job-top"><div><h3>Customer Service Representative</h3><p class="company">The Bull Karen <span>·</span> Nairobi, Kenya</p></div><span class="job-index">01</span></div>
-              <ul><li>Serve as a professional first point of contact, responding to enquiries with prompt, courteous assistance.</li><li>Handle concerns calmly, maintain accurate records and follow up on pending issues.</li><li>Coordinate with internal teams to process orders and meet service timelines.</li><li>Maintain a clean, organised customer-facing environment and uphold confidentiality and service standards.</li></ul>
+
+              <div class="job-top">
+                <div>
+                  <h3>Customer Service Representative</h3>
+
+                  <p class="company">
+                    The Bull Karen
+                    <span>·</span>
+                    Nairobi, Kenya
+                  </p>
+                </div>
+
+                <span class="job-index">01</span>
+              </div>
+
+              <ul>
+                <li>
+                  Serve as a professional first point of contact,
+                  responding to enquiries with prompt, courteous
+                  assistance.
+                </li>
+                <li>
+                  Handle concerns calmly, maintain accurate records
+                  and follow up on pending issues.
+                </li>
+                <li>
+                  Coordinate with internal teams to process orders
+                  and meet service timelines.
+                </li>
+                <li>
+                  Maintain a clean, organised customer-facing
+                  environment and uphold confidentiality and
+                  service standards.
+                </li>
+              </ul>
+
             </div>
           </article>
+
+          <!-- ROLE 2 -->
           <article class="timeline-item">
-            <div class="timeline-date">MAY 2026</div>
+
+            <div class="timeline-date">
+              MAY 2026
+            </div>
+
             <div class="timeline-content">
-              <div class="job-top"><div><h3>Customer Service Representative</h3><p class="company">Straton and Crapht Ltd <span>·</span> Nairobi, Kenya</p></div><span class="job-index">02</span></div>
-              <ul><li>Supported customers by telephone, email and face-to-face communication.</li><li>Processed requests, maintained customer and order records, and coordinated timely service.</li><li>Used active listening and de-escalation to manage complaints and protect customer information.</li></ul>
+
+              <div class="job-top">
+                <div>
+                  <h3>Customer Service Representative</h3>
+
+                  <p class="company">
+                    Straton and Crapht Ltd
+                    <span>·</span>
+                    Nairobi, Kenya
+                  </p>
+                </div>
+
+                <span class="job-index">02</span>
+              </div>
+
+              <ul>
+                <li>
+                  Supported customers by telephone, email and
+                  face-to-face communication.
+                </li>
+                <li>
+                  Processed requests, maintained customer and
+                  order records, and coordinated timely service.
+                </li>
+                <li>
+                  Used active listening and de-escalation to
+                  manage complaints and protect customer
+                  information.
+                </li>
+              </ul>
+
             </div>
           </article>
+
+          <!-- ROLE 3 -->
           <article class="timeline-item">
-            <div class="timeline-date">OCT 2025 — MAY 2026</div>
+
+            <div class="timeline-date">
+              OCT 2025 — MAY 2026
+            </div>
+
             <div class="timeline-content">
-              <div class="job-top"><div><h3>Hostess</h3><p class="company">Soul City <span>·</span> Ongata Rongai, Kenya</p></div><span class="job-index">03</span></div>
-              <ul><li>Welcomed guests, confirmed reservations and guided high-profile clients to appropriate sections.</li><li>Coordinated guest movement and handovers with service teams.</li><li>Supported hospitality, promotional activities, social media campaigns and events.</li></ul>
+
+              <div class="job-top">
+                <div>
+                  <h3>Hostess</h3>
+
+                  <p class="company">
+                    Soul City
+                    <span>·</span>
+                    Ongata Rongai, Kenya
+                  </p>
+                </div>
+
+                <span class="job-index">03</span>
+              </div>
+
+              <ul>
+                <li>
+                  Welcomed guests, confirmed reservations and
+                  guided high-profile clients to appropriate
+                  sections.
+                </li>
+                <li>
+                  Coordinated guest movement and handovers with
+                  service teams.
+                </li>
+                <li>
+                  Supported hospitality, promotional activities,
+                  social media campaigns and events.
+                </li>
+              </ul>
+
             </div>
           </article>
+
+          <!-- ROLE 4 -->
           <article class="timeline-item">
-            <div class="timeline-date">AUG — DEC 2025</div>
+
+            <div class="timeline-date">
+              AUG — DEC 2025
+            </div>
+
             <div class="timeline-content">
-              <div class="job-top"><div><h3>Lounge / Waitress</h3><p class="company">1.7 Lounge <span>·</span> Ruiru, Kenya</p></div><span class="job-index">04</span></div>
-              <ul><li>Delivered attentive table and guest service in a fast-paced hospitality environment.</li><li>Prioritised multiple requests while maintaining cleanliness, organisation and service quality.</li><li>Communicated with colleagues to support efficient guest flow and timely service.</li></ul>
+
+              <div class="job-top">
+                <div>
+                  <h3>Lounge / Waitress</h3>
+
+                  <p class="company">
+                    1.7 Lounge
+                    <span>·</span>
+                    Ruiru, Kenya
+                  </p>
+                </div>
+
+                <span class="job-index">04</span>
+              </div>
+
+              <ul>
+                <li>
+                  Delivered attentive table and guest service in
+                  a fast-paced hospitality environment.
+                </li>
+                <li>
+                  Prioritised multiple requests while maintaining
+                  cleanliness, organisation and service quality.
+                </li>
+                <li>
+                  Communicated with colleagues to support
+                  efficient guest flow and timely service.
+                </li>
+              </ul>
+
             </div>
           </article>
+
+          <!-- ROLE 5 -->
           <article class="timeline-item">
-            <div class="timeline-date">OCT 2024</div>
+
+            <div class="timeline-date">
+              OCT 2024
+            </div>
+
             <div class="timeline-content">
-              <div class="job-top"><div><h3>Hostess</h3><p class="company">Evo Lounge <span>·</span> Rongai, Kenya</p></div><span class="job-index">05</span></div>
-              <ul><li>Welcomed and directed guests, confirmed reserved sections and ensured smooth handovers.</li><li>Maintained a presentable guest environment and supported promotional and event-related engagement.</li></ul>
+
+              <div class="job-top">
+                <div>
+                  <h3>Hostess</h3>
+
+                  <p class="company">
+                    Evo Lounge
+                    <span>·</span>
+                    Rongai, Kenya
+                  </p>
+                </div>
+
+                <span class="job-index">05</span>
+              </div>
+
+              <ul>
+                <li>
+                  Welcomed and directed guests, confirmed reserved
+                  sections and ensured smooth handovers.
+                </li>
+                <li>
+                  Maintained a presentable guest environment and
+                  supported promotional and event-related
+                  engagement.
+                </li>
+              </ul>
+
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- TECHNICAL SKILLS -->
     <section class="section-wrap tools-section" id="tools">
+
       <div class="tools-section-heading">
-        <p class="eyebrow">04 / TECHNICAL SKILLS</p>
-        <h2>Comfortable with the<br><em>tools of the workplace.</em></h2>
+        <p class="eyebrow">05 / TECHNICAL SKILLS</p>
+
+        <h2>
+          Comfortable with the<br>
+          <em>tools of the workplace.</em>
+        </h2>
       </div>
-      <div class="tools-card"><div class="tool-row"><span>Microsoft Word</span><span>Document preparation & correspondence</span></div><div class="tool-row"><span>Microsoft Excel</span><span>Basic records, lists & data entry</span></div><div class="tool-row"><span>Microsoft Outlook</span><span>Email communication & calendar support</span></div><div class="tool-row"><span>Microsoft Teams</span><span>Workplace communication & coordination</span></div><div class="tool-row"><span>Digital systems</span><span>Transactions, spreadsheets & record keeping</span></div></div>
+
+      <div class="tools-card">
+
+        <div class="tool-row">
+          <span>Microsoft Word</span>
+          <span>Document preparation &amp; correspondence</span>
+        </div>
+
+        <div class="tool-row">
+          <span>Microsoft Excel</span>
+          <span>Basic records, lists &amp; data entry</span>
+        </div>
+
+        <div class="tool-row">
+          <span>Microsoft Outlook</span>
+          <span>Email communication &amp; calendar support</span>
+        </div>
+
+        <div class="tool-row">
+          <span>Microsoft Teams</span>
+          <span>Workplace communication &amp; coordination</span>
+        </div>
+
+        <div class="tool-row">
+          <span>Digital systems</span>
+          <span>Transactions, spreadsheets &amp; record keeping</span>
+        </div>
+
+      </div>
     </section>
 
+    <!-- PROFESSIONAL VALUES -->
     <section class="values-section">
       <div class="section-wrap values-inner">
+
         <p class="eyebrow">THE WAY I WORK</p>
-        <h2>Warm in approach.<br><em>Reliable in action.</em></h2>
-        <div class="values-list"><span>Approachable</span><span>Trustworthy</span><span>Well organised</span><span>Detail-conscious</span><span>Professional</span><span>Flexible</span><span>Customer-focused</span><span>Dependable</span></div>
+
+        <h2>
+          Warm in approach.<br>
+          <em>Reliable in action.</em>
+        </h2>
+
+        <div class="values-list">
+          <span>Approachable</span>
+          <span>Trustworthy</span>
+          <span>Well organised</span>
+          <span>Detail-conscious</span>
+          <span>Professional</span>
+          <span>Flexible</span>
+          <span>Customer-focused</span>
+          <span>Dependable</span>
+        </div>
+
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact-section section-wrap" id="contact">
-      <div class="contact-copy"><p class="eyebrow">05 / LET’S CONNECT</p><h2>Make your next<br>first impression<br><em>a great one.</em></h2><p>Interested in a front-office, receptionist or customer-experience opportunity? I’d be happy to connect.</p></div>
+
+      <div class="contact-copy">
+        <p class="eyebrow">06 / LET’S CONNECT</p>
+
+        <h2>
+          Make your next<br>
+          first impression<br>
+          <em>a great one.</em>
+        </h2>
+
+        <p>
+          Interested in a front-office, receptionist or
+          customer-experience opportunity? I’d be happy to connect.
+        </p>
+      </div>
+
       <div class="contact-card">
+
         <p class="eyebrow">CONTACT DETAILS</p>
-        <a href="mailto:kariukililianah@gmail.com" class="contact-line"><span>Email</span><strong>kariukililianah@gmail.com</strong><span class="arrow">↗</span></a>
-        <a href="tel:+254791933984" class="contact-line"><span>Phone</span><strong>+254 791 933 984</strong><span class="arrow">↗</span></a>
-        <div class="contact-line static-line"><span>Location</span><strong>Nairobi, Kenya</strong><span class="arrow">⌖</span></div>
-        <a class="button button-light" href="mailto:kariukililianah@gmail.com?subject=Front%20Office%20Opportunity">Start a conversation <span>↗</span></a>
-        <p class="referee-note">Professional referees available on request.</p>
+
+        <a
+          href="mailto:kariukililianah@gmail.com"
+          class="contact-line"
+        >
+          <span>Email</span>
+          <strong>kariukililianah@gmail.com</strong>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          href="tel:+254791933984"
+          class="contact-line"
+        >
+          <span>Phone</span>
+          <strong>+254 791 933 984</strong>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <div class="contact-line static-line">
+          <span>Location</span>
+          <strong>Nairobi, Kenya</strong>
+          <span class="arrow" aria-hidden="true">⌖</span>
+        </div>
+
+        <a
+          class="button button-light"
+          href="mailto:kariukililianah@gmail.com?subject=Front%20Office%20Opportunity"
+        >
+          Start a conversation <span>↗</span>
+        </a>
+
+        <p class="referee-note">
+          Professional referees available on request.
+        </p>
+
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <a class="wordmark" href="#home">LK<span>.</span></a>
-    <p>© <span id="year"></span> Lilian Kariuki. Crafted with care.</p>
+
+    <a class="wordmark" href="#home" aria-label="Back to home">
+      LK<span>.</span>
+    </a>
+
+    <p>
+      © <span id="year"></span> Lilian Kariuki. Crafted with care.
+    </p>
+
     <a href="#home">Back to top ↑</a>
+
   </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
